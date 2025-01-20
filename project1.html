@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="zyyo.net">
+
+<head class="zyyo.net">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project - AI Advisor DUKIES</title>
+    <link rel="icon" href="./static/img/favicon.ico">
+    <meta name="description" content="A ECE(ML/big data) master student @ DUKE UNIVERSITY, showcasing projects.">
+    <meta name="keywords" content="AI, ML, Project, RAG, LLM, FastAPI, Streamlit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/root.css">
+    <script defer src="./static/js/script.js"></script>
+</head>
+
+<body>
+    <div id="zyyo-loading" style="display: none;">
+        <div id="zyyo-loading-center"></div>
+    </div>
+    <div class="zyyo-filter"></div>
+
+    <div class="zyyo-main">
+        <div class="zyyo-left">
+            <div class="logo" style="background-image: url(./static/img/logo.png);">
+                <img style="position: absolute; top:-15%; left:-10%; width: 120%; aspect-ratio: 1/1;" src="./static/img/logokuang.png">
+            </div>
+            <div class="left-div left-des">
+                <div class="left-des-item">📍 United States</div>
+                <div class="left-des-item">🎯 Looking for AI/ML and software engineering roles</div>
+            </div>
+        </div>
+
+        <div class="zyyo-right">
+            <header>
+                <div class="index-logo" style="background-image: url(./static/img/logo.png);">
+                    <img style="position: absolute; top:-15%; left:-10%; width: 120%; aspect-ratio: 1/1;" src="./static/img/logokuang.png">
+                </div>
+                <div class="welcome">
+                    Hello, I' m <span class="gradientText">Chuqiao (Allen) Lu</span>
+                </div>
+                <div class="contact-info">
+                    <u>📞 Tel: (USA) 858 539 5610 | 📧 Email: lcq15637375109@gmail.com</u>
+                </div>
+            </header>
+
+            <main>
+                <div class="title">Project: AI Advisor - DUKIES</div>
+                <div class="project-container">
+                    <div class="project-details">
+                        <h1>Developing AI Advisor - DUKIES</h1>
+                        <p>📅 Duration: May 2024 - Present</p>
+                        <p>📍 Duke University</p>
+
+                        <ul>
+                            <li>🚀 Built an AI-powered academic advising system using <b>Retrieval-Augmented Generation (RAG)</b>, leveraging <b>retriever</b> and <b>reranker</b> models.</li>
+                            <li>🧠 Integrated and fine-tuned <b>Qwen2.5</b> LLM with LoRA to improve accuracy and relevance in academic guidance for students.</li>
+                            <li>💻 Designed a <b>Streamlit</b> front-end for an interactive and user-friendly experience.</li>
+                            <li>⚡ Developed a robust <b>FastAPI</b> back-end for efficient handling of concurrent requests.</li>
+                            <li>📊 Curated and cleaned Duke University’s course data, forming specialized datasets to enhance model fine-tuning and vector database building.</li>
+                        </ul>
+
+                        <h2>Project Demonstration</h2>
+                        <figure>
+                            <img src="./static/img/project1_1.png" alt="DUKIES AI Advisor UI" width="80%">
+                            <figcaption>Prototype UI of DUKIES AI Advisor System. not only for CS students now! we serve for both CS and ECE</figcaption>
+                        </figure>
+                        <br>
+                        <p>By web scraw the data available at DUKE official website, we build our database for the whole CS and enhance
+                            courses offered by Duke as well as the professor's information.
+                        </p>
+                        <p>
+                            We use these info to fine-tune our LLM with LoRA configuration
+                        </p>
+                        <p>
+                            We vectorize our database using Milvus and build a two step RAG system:<br>
+                            1. Retrieve top-k relevant course and professor information using the retriever model.
+                            2. Rerank the retrieved information to ensure the most relevant data is presented.
+                            3. Generate personalized academic advice using the fine-tuned Qwen2.5 LLM.
+                        </p>
+                        <p>
+                            We use FastAPI to handle the concurrent requests and Streamlit to provide a user-friendly interface.
+
+                        <p>📄 Project Documentation: <a href="https://your-documentation-link.com" target="_blank">Read more. This project will be open-sourced soon!!!</a></p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        Chuqiao Lu | <a href="https://github.com/OhmaAllen" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/chuqiao-lu-b05305325" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>

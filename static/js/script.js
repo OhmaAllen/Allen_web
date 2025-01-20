@@ -224,3 +224,29 @@ window.addEventListener('load', function() {
     }, 100);
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    // 图片和文字数组
+    const lifeMoments = [
+        { img: "./static/img/life1.png", text: '"Exploring new places, one adventure at a time!"' },
+        { img: "./static/img/life2.png", text: '"Me on top of the mountain!(songshan）"' },
+        { img: "./static/img/life3.png", text: '"I like playing soccer!"' },
+        { img: "./static/img/life4.png", text: '"Hitting the gym. An oldddddddd gym in China"' },
+        { img: "./static/img/life5.png", text: '"Lamb Pilaf cooked by me"' },
+        { img: "./static/img/life6.png", text: '"After Brazilian Jiu-jitsu practices"' },
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById("lifeMomentImage");
+    const textElement = document.getElementById("lifeMomentText");
+
+    function shuffleMoments() {
+        currentIndex = (currentIndex + 1) % lifeMoments.length;
+        imgElement.src = lifeMoments[currentIndex].img;
+        textElement.textContent = lifeMoments[currentIndex].text;
+    }
+
+    setInterval(shuffleMoments, 5000); // 每5秒更换图片和文字
+});
+
+
