@@ -1,0 +1,4 @@
+# 忽略 Caddyfile 和 Dockerfile
+Caddyfile
+Dockerfile
+.yaml
